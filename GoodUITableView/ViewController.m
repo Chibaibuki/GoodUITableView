@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDelegate,UITableViewDataSource>
 
 @end
 
@@ -16,12 +16,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UITableView * aTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    aTableView.delegate      = self;
+    aTableView.dataSource    = self;
+    
+    [self.view addSubview:aTableView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UITableViewDelegate
+/*
+ Put some delegate method here.
+ */
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 20;
 }
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *aCell = [[UITableViewCell alloc]init];
+    UILabel *aLabel        = [[UILabel alloc]initWithFrame:CGRectMake(20, 20, 200, 33)];
+    aLabel.text            = [NSString stringWithFormat:@"%ld",indexPath.row];
+    
+    [aCell addSubview:aLabel];
+    
+    return aCell;
+}
+
 
 @end
