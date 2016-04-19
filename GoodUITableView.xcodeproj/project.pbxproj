@@ -15,6 +15,7 @@
 		D5DD05931CC5CFCD0063A26F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5DD05911CC5CFCD0063A26F /* LaunchScreen.storyboard */; };
 		D5DD059E1CC5CFCD0063A26F /* GoodUITableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DD059D1CC5CFCD0063A26F /* GoodUITableViewTests.m */; };
 		D5DD05A91CC5CFCD0063A26F /* GoodUITableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DD05A81CC5CFCD0063A26F /* GoodUITableViewUITests.m */; };
+		D5DD05BB1CC5D8DA0063A26F /* TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DD05BA1CC5D8DA0063A26F /* TableViewDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		D5DD05A41CC5CFCD0063A26F /* GoodUITableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodUITableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DD05A81CC5CFCD0063A26F /* GoodUITableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodUITableViewUITests.m; sourceTree = "<group>"; };
 		D5DD05AA1CC5CFCD0063A26F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5DD05B91CC5D8DA0063A26F /* TableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDataSource.h; sourceTree = "<group>"; };
+		D5DD05BA1CC5D8DA0063A26F /* TableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				D5DD05911CC5CFCD0063A26F /* LaunchScreen.storyboard */,
 				D5DD05941CC5CFCD0063A26F /* Info.plist */,
 				D5DD05831CC5CFCD0063A26F /* Supporting Files */,
+				D5DD05B91CC5D8DA0063A26F /* TableViewDataSource.h */,
+				D5DD05BA1CC5D8DA0063A26F /* TableViewDataSource.m */,
 			);
 			path = GoodUITableView;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			files = (
 				D5DD058B1CC5CFCD0063A26F /* ViewController.m in Sources */,
 				D5DD05881CC5CFCD0063A26F /* AppDelegate.m in Sources */,
+				D5DD05BB1CC5D8DA0063A26F /* TableViewDataSource.m in Sources */,
 				D5DD05851CC5CFCD0063A26F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +502,7 @@
 				D5DD05AF1CC5CFCD0063A26F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5DD05B01CC5CFCD0063A26F /* Build configuration list for PBXNativeTarget "GoodUITableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +511,7 @@
 				D5DD05B21CC5CFCD0063A26F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5DD05B31CC5CFCD0063A26F /* Build configuration list for PBXNativeTarget "GoodUITableViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +520,7 @@
 				D5DD05B51CC5CFCD0063A26F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

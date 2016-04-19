@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "TableViewDataSource.h"
 
-@interface ViewController () <UITableViewDelegate,UITableViewDataSource>
-
+@interface ViewController () <UITableViewDelegate>
+@property (strong,nonatomic)TableViewDataSource *aDataSource;
 @end
 
 @implementation ViewController
@@ -18,32 +19,19 @@
     [super viewDidLoad];
     
     UITableView * aTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    
+    self.aDataSource = [[TableViewDataSource alloc]init];
     aTableView.delegate      = self;
-    aTableView.dataSource    = self;
+    aTableView.dataSource    = self.aDataSource;
     
     [self.view addSubview:aTableView];
 }
 
 #pragma mark - UITableViewDelegate
 /*
- Put some delegate method here.
+ Put some delegate methods here.
  */
-#pragma mark - UITableViewDataSource
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 20;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    UITableViewCell *aCell = [[UITableViewCell alloc]init];
-    UILabel *aLabel        = [[UILabel alloc]initWithFrame:CGRectMake(20, 20, 200, 33)];
-    aLabel.text            = [NSString stringWithFormat:@"%ld",indexPath.row];
-    
-    [aCell addSubview:aLabel];
-    
-    return aCell;
-}
 
 
 @end
