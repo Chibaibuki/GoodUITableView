@@ -17,14 +17,30 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *SimpleTableIdentifier = @"SimpleTableIdentifier";
+    static NSString *AnotherTableIdentifier = @"AnotherTableIdentifier";
     
-    UITableViewCell *aCell = [[UITableViewCell alloc]init];
-    UILabel *aLabel        = [[UILabel alloc]initWithFrame:CGRectMake(20, 20, 200, 33)];
-    aLabel.text            = [NSString stringWithFormat:@"%ld",indexPath.row];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SimpleTableIdentifier];
+    UITableViewCell *cell;
+    if (indexPath.row%2) {
+        cell  = [tableView dequeueReusableCellWithIdentifier:SimpleTableIdentifier];
+
+    }else{
+        cell  = [tableView dequeueReusableCellWithIdentifier:AnotherTableIdentifier];
+    }
     
-    [aCell addSubview:aLabel];
-    
-    return aCell;
+    if(cell == nil){
+//        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:SimpleTableIdentifier];
+        if (indexPath.row%2) {
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:SimpleTableIdentifier];
+                cell.textLabel.text = [NSString stringWithFormat:@"%ld AndI'm the One",indexPath.row];
+        }else{
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:AnotherTableIdentifier];
+                cell.textLabel.text = [NSString stringWithFormat:@"%ld AndI'm the Another",indexPath.row];
+        }
+    }
+
+    return cell;
 }
 
 @end
