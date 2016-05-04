@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D58502F21CD9E16E0023B285 /* GoodTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D58502F11CD9E16E0023B285 /* GoodTableViewDataSource.m */; };
+		D58502F51CD9E86D0023B285 /* GoodBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D58502F41CD9E86D0023B285 /* GoodBaseTableViewCell.m */; };
+		D5BC98821CCFBD7C00482C84 /* GoodTableViewSectionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BC98811CCFBD7C00482C84 /* GoodTableViewSectionObject.m */; };
 		D5C8C6541CCCF70D00C6A893 /* GoodTableViewBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C8C6531CCCF70D00C6A893 /* GoodTableViewBaseItem.m */; };
 		D5DD05851CC5CFCD0063A26F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DD05841CC5CFCD0063A26F /* main.m */; };
 		D5DD05881CC5CFCD0063A26F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DD05871CC5CFCD0063A26F /* AppDelegate.m */; };
@@ -37,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D58502F01CD9E16E0023B285 /* GoodTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodTableViewDataSource.h; path = GoodTableViewController/GoodTableViewDataSource.h; sourceTree = "<group>"; };
+		D58502F11CD9E16E0023B285 /* GoodTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodTableViewDataSource.m; path = GoodTableViewController/GoodTableViewDataSource.m; sourceTree = "<group>"; };
+		D58502F31CD9E86D0023B285 /* GoodBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodBaseTableViewCell.h; path = GoodTableViewController/GoodBaseTableViewCell.h; sourceTree = "<group>"; };
+		D58502F41CD9E86D0023B285 /* GoodBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodBaseTableViewCell.m; path = GoodTableViewController/GoodBaseTableViewCell.m; sourceTree = "<group>"; };
+		D5BC98801CCFBD7C00482C84 /* GoodTableViewSectionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodTableViewSectionObject.h; path = GoodTableViewController/GoodTableViewSectionObject.h; sourceTree = "<group>"; };
+		D5BC98811CCFBD7C00482C84 /* GoodTableViewSectionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodTableViewSectionObject.m; path = GoodTableViewController/GoodTableViewSectionObject.m; sourceTree = "<group>"; };
 		D5C8C6521CCCF70D00C6A893 /* GoodTableViewBaseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodTableViewBaseItem.h; path = GoodTableViewController/GoodTableViewBaseItem.h; sourceTree = "<group>"; };
 		D5C8C6531CCCF70D00C6A893 /* GoodTableViewBaseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodTableViewBaseItem.m; path = GoodTableViewController/GoodTableViewBaseItem.m; sourceTree = "<group>"; };
 		D5DD05801CC5CFCD0063A26F /* GoodUITableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodUITableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +98,12 @@
 			children = (
 				D5C8C6521CCCF70D00C6A893 /* GoodTableViewBaseItem.h */,
 				D5C8C6531CCCF70D00C6A893 /* GoodTableViewBaseItem.m */,
+				D5BC98801CCFBD7C00482C84 /* GoodTableViewSectionObject.h */,
+				D5BC98811CCFBD7C00482C84 /* GoodTableViewSectionObject.m */,
+				D58502F01CD9E16E0023B285 /* GoodTableViewDataSource.h */,
+				D58502F11CD9E16E0023B285 /* GoodTableViewDataSource.m */,
+				D58502F31CD9E86D0023B285 /* GoodBaseTableViewCell.h */,
+				D58502F41CD9E86D0023B285 /* GoodBaseTableViewCell.m */,
 			);
 			name = GoodBaseUITableViewController;
 			sourceTree = "<group>";
@@ -289,10 +304,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5C8C6541CCCF70D00C6A893 /* GoodTableViewBaseItem.m in Sources */,
+				D58502F51CD9E86D0023B285 /* GoodBaseTableViewCell.m in Sources */,
 				D5DD058B1CC5CFCD0063A26F /* ViewController.m in Sources */,
 				D5DD05881CC5CFCD0063A26F /* AppDelegate.m in Sources */,
 				D5DD05BB1CC5D8DA0063A26F /* TableViewDataSource.m in Sources */,
+				D58502F21CD9E16E0023B285 /* GoodTableViewDataSource.m in Sources */,
 				D5DD05851CC5CFCD0063A26F /* main.m in Sources */,
+				D5BC98821CCFBD7C00482C84 /* GoodTableViewSectionObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
