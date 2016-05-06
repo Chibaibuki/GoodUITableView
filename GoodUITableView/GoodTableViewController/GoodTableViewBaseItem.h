@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-FOUNDATION_EXPORT CGFloat const CellInvailidHeight;
+FOUNDATION_EXPORT CGFloat const CellInvalidHeight;
 
 @interface GoodTableViewBaseItem : NSObject
 @property (nonatomic, assign)CGFloat cellHeight;

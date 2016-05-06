@@ -20,6 +20,8 @@
 		D5DD059E1CC5CFCD0063A26F /* GoodUITableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DD059D1CC5CFCD0063A26F /* GoodUITableViewTests.m */; };
 		D5DD05A91CC5CFCD0063A26F /* GoodUITableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DD05A81CC5CFCD0063A26F /* GoodUITableViewUITests.m */; };
 		D5DD05BB1CC5D8DA0063A26F /* TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DD05BA1CC5D8DA0063A26F /* TableViewDataSource.m */; };
+		D5DFEF901CDC51070094B4BC /* GoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DFEF8F1CDC51070094B4BC /* GoodTableViewController.m */; };
+		D5DFEF931CDC515B0094B4BC /* GoodBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DFEF921CDC515B0094B4BC /* GoodBaseTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,10 @@
 		D5DD05AA1CC5CFCD0063A26F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5DD05B91CC5D8DA0063A26F /* TableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDataSource.h; sourceTree = "<group>"; };
 		D5DD05BA1CC5D8DA0063A26F /* TableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDataSource.m; sourceTree = "<group>"; };
+		D5DFEF8E1CDC51070094B4BC /* GoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodTableViewController.h; path = GoodTableViewController/GoodTableViewController.h; sourceTree = "<group>"; };
+		D5DFEF8F1CDC51070094B4BC /* GoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodTableViewController.m; path = GoodTableViewController/GoodTableViewController.m; sourceTree = "<group>"; };
+		D5DFEF911CDC515B0094B4BC /* GoodBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GoodBaseTableView.h; path = GoodTableViewController/GoodBaseTableView.h; sourceTree = "<group>"; };
+		D5DFEF921CDC515B0094B4BC /* GoodBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GoodBaseTableView.m; path = GoodTableViewController/GoodBaseTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,10 @@
 				D58502F11CD9E16E0023B285 /* GoodTableViewDataSource.m */,
 				D58502F31CD9E86D0023B285 /* GoodBaseTableViewCell.h */,
 				D58502F41CD9E86D0023B285 /* GoodBaseTableViewCell.m */,
+				D5DFEF8E1CDC51070094B4BC /* GoodTableViewController.h */,
+				D5DFEF8F1CDC51070094B4BC /* GoodTableViewController.m */,
+				D5DFEF911CDC515B0094B4BC /* GoodBaseTableView.h */,
+				D5DFEF921CDC515B0094B4BC /* GoodBaseTableView.m */,
 			);
 			name = GoodBaseUITableViewController;
 			sourceTree = "<group>";
@@ -304,7 +314,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5C8C6541CCCF70D00C6A893 /* GoodTableViewBaseItem.m in Sources */,
+				D5DFEF931CDC515B0094B4BC /* GoodBaseTableView.m in Sources */,
 				D58502F51CD9E86D0023B285 /* GoodBaseTableViewCell.m in Sources */,
+				D5DFEF901CDC51070094B4BC /* GoodTableViewController.m in Sources */,
 				D5DD058B1CC5CFCD0063A26F /* ViewController.m in Sources */,
 				D5DD05881CC5CFCD0063A26F /* AppDelegate.m in Sources */,
 				D5DD05BB1CC5D8DA0063A26F /* TableViewDataSource.m in Sources */,

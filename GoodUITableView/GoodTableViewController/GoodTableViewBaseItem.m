@@ -8,7 +8,7 @@
 
 #import "GoodTableViewBaseItem.h"
 
-CGFloat const CellInvailidHeight = -1;
+CGFloat const CellInvalidHeight = -1;
 
 
 @implementation GoodTableViewBaseItem
