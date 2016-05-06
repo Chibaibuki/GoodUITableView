@@ -10,7 +10,7 @@
 #import "GoodTableViewDataSource.h"
 
 @class GoodTableViewSectionObject;
-@protocol GoodTableDelegate <UITableViewDelegate>
+@protocol GoodTableViewDelegate <UITableViewDelegate>
 @optional
 /**
  * 选择一个cell的回调，并返回被选择cell的数据结构和indexPath

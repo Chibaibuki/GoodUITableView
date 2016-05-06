@@ -16,7 +16,7 @@ CGFloat const CellInvalidHeight = -1;
 -(instancetype)initWithItemImage:(UIImage *)image Title:(NSString *)Title Subtitle:(NSString *)title AccessoryImage:(UIImage *)accessoryImage{
     self = [super init];
     if (self) {
-        self.cellHeight = CellInvailidHeight;
+        self.cellHeight = CellInvalidHeight;
         self.itemImage = image;
         self.itemTitle = title;
         self.itemSubtitle  = title;

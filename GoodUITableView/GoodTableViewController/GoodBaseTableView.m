@@ -49,4 +49,37 @@
 }
 
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([self.goodDelegate respondsToSelector:@selector(didSelectObject:atIndexPath:)]) {
+        id<GoodTableViewDataSource> dataSource = (id<GoodTableViewDataSource>)tableView.dataSource;
+        id object = [dataSource tableView:tableView objectForRowAtIndexPath:indexPath];
+        [self.goodDelegate didSelectObject:object atIndexPath:indexPath];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
+    else if ([self.goodDelegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]) {
+        [self.goodDelegate tableView:tableView didSelectRowAtIndexPath:indexPath];
+    }
+}
+
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    if ([self.goodDelegate respondsToSelector:@selector(headerViewForSectionObject:atSection:)]) {
+        id<GoodTableViewDataSource> dataSource = (id<GoodTableViewDataSource>)tableView.dataSource;
+        GoodTableViewSectionObject *sectionObject = [((GoodTableViewDataSource *)dataSource).sections objectAtIndex:section];
+        
+        return [self.goodDelegate headerViewForSectionObject:sectionObject atSection:section];
+    }
+    else if ([self.goodDelegate respondsToSelector:@selector(tableView:viewForHeaderInSection:)]) {
+        return [self.goodDelegate tableView:tableView viewForHeaderInSection:section];
+    }
+    return nil;
+}
+
+#pragma mark - 传递原生协议
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([self.goodDelegate respondsToSelector:@selector(tableView:willDisplayCell:forRowAtIndexPath:)]) {
+        [self.goodDelegate tableView:tableView willDisplayCell:cell forRowAtIndexPath:indexPath];
+    }
+}
 @end
